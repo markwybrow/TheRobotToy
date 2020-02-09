@@ -1,0 +1,40 @@
+// Game Dimensions panel
+.icon--white {
+    color: var(--default-color-text__light);
+}
+
+.northIcon {
+    transform: rotate(-90deg);
+    color: #028090;
+}
+
+.eastIcon {
+    transform: rotate(0deg);
+    color: #25a18e;
+}
+
+.southIcon {
+    transform: rotate(90deg);
+    color: #00a5cf;
+}
+
+.westIcon {
+    transform: rotate(-180deg);
+    color: #7c77b9;
+}
+
+.container {
+    width: 100%;
+    border: 1px solid silver;
+    padding: 1.5em;
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.site-title {
+    font-size: 4em;
+    padding: unset;
+    color: var(--default-color-text__light);
+}
