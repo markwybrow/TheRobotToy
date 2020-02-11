@@ -13,7 +13,7 @@ const reducer = (state, action) => {
 				...state,
 				gridDimensions: action.newGridDimensions,
 			};
-			console.log('changeGridPosition ==============', update);
+			
 
 			return update;
 		case 'changeGridPosition':
@@ -21,7 +21,7 @@ const reducer = (state, action) => {
 				...state,
 				gridPosition: action.newGridPosition,
 			};
-			console.log('changeGridPosition----------', update);
+			
 
 			return update;
 
