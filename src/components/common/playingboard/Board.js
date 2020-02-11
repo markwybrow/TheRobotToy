@@ -26,6 +26,7 @@ const Board = () => {
 		for (let i = 0; i < gridXrow * gridYcolumn; i++) {
 			boxCollection.push(
 				<div
+					key={`box${i}`}
 					className={`box ${
 						robotPos - 1 === i ? 'active ' + newDirection : ''
 					}`}>
