@@ -1,16 +1,22 @@
 import React from 'react';
-
-const InputTextArea = props => {
-	const { placeholder = '' } = props;
-	return (
-		<div className="control">
-			<textarea
-				className="textarea"
-				value={props.values}
-				onChange={props.fnc(props.values)}
-				placeholder={props.placeholder}></textarea>
-		</div>
-	);
+import PropTypes from 'prop-types';
+const InputTextArea = (props) => {
+  const { placeholder = '',values, fnc=()=>{} } = props;
+  return (
+    <div className="control">
+      <textarea
+        className="textarea"
+        value={values}
+        onChange={fnc(values)}
+        placeholder={placeholder}
+      />
+    </div>
+  );
 };
 
+InputTextArea.propTypes = {
+  values: PropTypes.string,
+  fnc: PropTypes.func,
+  placeholder: PropTypes.string,
+};
 export default InputTextArea;

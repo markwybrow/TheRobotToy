@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Header = props => (
-	<header className="masthead App-header">{props.children}</header>
-);
+const Header = ({ children }) => <header className="masthead App-header">{children}</header>;
 
+Header.propTypes = {
+  children: PropTypes.node,
+};
 export default Header;
