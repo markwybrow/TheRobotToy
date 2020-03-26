@@ -2,7 +2,7 @@
 
 Small code example application in React
 
-### TODO :
+### TODO and Notes to self:
 
 > String Commands Panel - required to add a continuous set of steps to move around platform
 > Enzyme tests - playing with testing-library - still prefer enzyme & jest but I will push through - resistance is futile!
@@ -10,6 +10,7 @@ Small code example application in React
 > Reset Button - currently you need to either re-enter start values or hit the Robot Move commands till you are back on the platform Or Refresh page.
 > Ability to drop more Robots on the grid & restrict collisions - next
 > I will be adding my [light weight  Grid framework](https://github.com/markwybrow/gridWrapperFramework)
+> Needs a more functional layout for mobile
 
 ### Setup
 
