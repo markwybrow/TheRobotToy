@@ -11,13 +11,16 @@ const FormGridWrapper = () => {
 
   let BoardConfig = { ...gridDimensions, ...gridPositionSettings };
 
-  useEffect(() => {
-    BoardConfig = {
-      ...gridDimensions,
-      ...gridPositionSettings,
-    };
-    gridPositionHandler();
-  }, [gridPositionSettings, gridDimensions]);
+  useEffect(
+    () => {
+      BoardConfig = {
+        ...gridDimensions,
+        ...gridPositionSettings,
+      };
+      gridPositionHandler();
+    },
+    [gridPositionSettings, gridDimensions],
+  );
 
   const submitFormHandler = (event) => {
     event.preventDefault();

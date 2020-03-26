@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText should render correctly in "debug" mode 1`] = `
+<div
+  className="control"
+>
+  <input
+    className="input is-small"
+    onChange={[Function]}
+    placeholder="text"
+    type="text"
+  />
+</div>
+`;

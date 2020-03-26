@@ -3,7 +3,7 @@ import { RobotContext } from '../../context/RobotContext';
 // WIP
 /* eslint-disable */
 
-const FormCommandStringWrapper = ({ placeholder,...props}) => {
+const FormCommandStringWrapper = ({ placeholder, ...props }) => {
   const { state, dispatch } = useContext(RobotContext);
   const { gridDimensions, gridPosition } = state;
   const [gridSettings, setGrid] = useState(gridDimensions);

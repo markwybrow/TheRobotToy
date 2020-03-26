@@ -1,15 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 const InputTextArea = (props) => {
-  const { placeholder = '',values, fnc=()=>{} } = props;
+  const { placeholder = '', values, fnc = () => {} } = props;
   return (
     <div className="control">
-      <textarea
-        className="textarea"
-        value={values}
-        onChange={fnc(values)}
-        placeholder={placeholder}
-      />
+      <textarea className="textarea" value={values} onChange={fnc(values)} placeholder={placeholder} />
     </div>
   );
 };

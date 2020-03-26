@@ -38,3 +38,9 @@
     padding: unset;
     color: var(--default-color-text__light);
 }
+
+@media screen and (max-width: 420px) {
+    .panel:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+}

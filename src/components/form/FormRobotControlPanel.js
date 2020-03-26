@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { RobotContext } from '../../context/RobotContext';
 import {
   FaPlayCircle,
@@ -69,7 +69,7 @@ const FormRobotControlPanel = () => {
   return (
     <div className="container column">
       <div className="form-group">
-        <div className="text-center">
+        <div className="text-center is-hidden-mobile">
           <DirectionalPointer>
             <h1>
               {getDirection(direction)}
@@ -77,7 +77,7 @@ const FormRobotControlPanel = () => {
             </h1>
           </DirectionalPointer>
         </div>
-        <h5 className="">Direction of Movement:</h5>
+        <h2 className="is-hidden-mobile">Direction of Movement:</h2>
         <div className="form-row">
           <a className="button is-light" onClick={() => updateDirection('N')}>
             <span className="panel-icon">
@@ -108,9 +108,9 @@ const FormRobotControlPanel = () => {
       </div>
 
       <div className="form-group">
-        <h5 className="control-label" htmlFor="movement">
+        <h2 className="control-label is-hidden-mobile" htmlFor="movement">
           Moving Robot Commands:
-        </h5>
+        </h2>
         <div className="form-row">
           <a className="button is-light" onClick={() => moveRobot(-1)}>
             <span className="panel-icon">

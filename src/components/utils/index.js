@@ -7,7 +7,6 @@ let robotToylog = [];
 let robotToyPath = [];
 let robotNo = 0;
 
-
 export const isRobotOffGrid = ({ gridX, gridY }, { posX, posY }) => {
   return posX > gridX || posX < 1 || posY > gridY || posY < 1;
 };
@@ -55,7 +54,7 @@ export function getDirection(direction) {
 export function turnCommand(turn, direction) {
   let compassHeading = directionFromAmountOfTurns(direction);
 
-  if (turn == 'L') {
+  if (turn === 'L') {
     // Turning Left 90deg from current heading
     compassHeading = (compassHeading + 4 - 1) % 4;
   } else {
@@ -69,7 +68,7 @@ export function turnCommand(turn, direction) {
 export function directionFromAmountOfTurns(dir) {
   let position = 0;
   compassPoints.forEach((d, idx) => {
-    if (d == dir) {
+    if (d === dir) {
       position = idx;
     }
   });
